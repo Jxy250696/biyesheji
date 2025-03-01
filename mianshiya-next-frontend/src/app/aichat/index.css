@@ -1,0 +1,63 @@
+/* ./app/aichat/index.module.css */
+.chatContainer {
+    width: 1200px; /* 设置固定宽度 */
+    height: 500px; /* 设置固定高度 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatWindow {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px; /* 设置固定宽度 */
+    height: 500px; /* 设置固定高度 */
+    /*设置最大高度*/
+    max-height: 500px;
+    flex: 1;
+    /*让这个盒子居中*/
+
+    padding: 16px;
+    background-color: #f0f2f5;
+}
+
+.message{
+    margin-bottom: 10px;
+    max-width: 65%;
+    word-wrap: break-word;
+
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.message.box{
+    height: 400px; /* 设置固定高度 */
+    overflow-y: auto;
+    max-width: 100%;
+}
+
+.message.user {
+    background-color: #d1e7dd;
+    text-align: right;
+    margin-left: auto;
+}
+
+.message.ai {
+    background-color: #f8d7da;
+    text-align: left;
+}
+
+.inputArea {
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+}
